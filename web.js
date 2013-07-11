@@ -4,10 +4,10 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(index());
+  response.send(index);
 });
 
-var index = fs.readFileSync('index.html', 'utf-8');
+var index = fs.readFileSync('./index.html');
 
 
 
