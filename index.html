@@ -99,6 +99,13 @@
       .footer a {
         color: #ccccff;
       }
+
+      /* Carousel images */
+      .carouselImage img {
+        width: 100%;
+        height: 225px;
+        max-height: 225px;
+      }
     </style>
   </head>
   <body>
@@ -135,17 +142,38 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
       	<div class="span12">
-      	  <h1>Product</h1>
+      	  <h1>Course Buddy</h1>
       	</div>  
        </div>
 
+
      <div class="row-fluid subheading">
        <div class="span12">
-      	 <!-- Special typography from Bootstrap for lead paragraph. -->
-      	 <!-- http://twitter/github.io/bootstrap/base-css.html#typography -->
-      	 <p class="lead">One sentence description.</p>
+         <!-- Special typography from Bootstrap for lead paragraph. -->
+         <!-- http://twitter/github.io/bootstrap/base-css.html#typography -->
+         <p class="lead">Bring classmates together for mutual peer learning</p>
        </div>
      </div>
+
+
+       <div class="row-fluid carousel span6">
+            <div id="myCarousel" class="carousel slide container" style="width:auto; margin:0 auto;">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                  <div class="active item carouselImage"><img class="carouselImage" src="./studying.jpg">Photo Credit: <a href="http://www.flickr.com/photos/98274023@N00/2417001179/">Bill Selak</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></div>
+                  <div class="item carouselImage"><img class="carouselImage" src="./girl_working.jpg"></div>
+                  <div class="item carouselImage"><img src="./glasses.jpg">Photo Credit: <a href="http://www.flickr.com/photos/52436778@N00/2507540811/">Pragmagraphr</a> via <a href="http://compfight.com">Compfight</a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">cc</a></div>
+              </div>
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+          </div>
 
      <div class="row-fluid pitch">
       <div class="span5 offset1 video">
